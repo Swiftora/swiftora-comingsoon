@@ -1,56 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Swiftora — Coming Soon</title>
-  <meta name="description" content="Swiftora crafts AI-powered tools that save time for online sellers and creators." />
-  <meta name="robots" content="index,follow" />
-  <meta name="theme-color" content="#F4F6FA" />
-  <meta property="og:title" content="Swiftora — Coming Soon" />
-  <meta property="og:description" content="Tools that save sellers & creators time. A new experience is on the way." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.swiftora.ai/" />
-  <meta property="og:image" content="/swiftora_icon_512x512.png" />
-  <link rel="icon" type="image/png" href="/swiftora_icon_512x512.png" />
-  <link rel="stylesheet" href="/styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Swiftora.ai — Private Pre-Launch</title>
+  <meta name="description" content="Swiftora.ai is in private pre-launch. This site is intentionally minimal while we assemble the team." />
+  <meta name="robots" content="noindex,nofollow,noarchive,nosnippet" />
+  <link rel="icon" href="/favicon.ico" />
+  <style>
+    :root{ --bg:#0b0b10; --text:#f5f7fb; --muted:#b6bdc7; --brand:#7c3aed; --accent:#ff6a00 }
+    *{box-sizing:border-box} html,body{height:100%}
+    body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
+    .wrap{max-width:880px;margin:0 auto;padding:28px}
+    .nav{display:flex;align-items:center;justify-content:space-between}
+    .tag{display:inline-flex;align-items:center;gap:10px;background:#fff;color:#111;padding:6px 10px;border-radius:10px;font-weight:800}
+    .btn{display:inline-flex;align-items:center;padding:10px 14px;border-radius:10px;font-weight:700;text-decoration:none}
+    .btn.primary{background:linear-gradient(135deg,var(--brand),var(--accent));color:#fff}
+    .btn.ghost{border:1px solid rgba(255,255,255,.18);color:var(--text)}
+    main{padding:64px 0 32px}
+    h1{font-size:clamp(28px,6vw,44px);letter-spacing:-.02em;margin:0 0 8px}
+    .lead{color:var(--muted);max-width:720px}
+    footer{border-top:1px solid rgba(255,255,255,.1);margin-top:56px;color:#9aa3b2}
+    footer .wrap{padding-top:18px;padding-bottom:28px}
+  </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="card" role="region" aria-label="Swiftora Coming Soon">
-      <div class="header">
-        <img src="/swiftora_icon_512x512.png" alt="Swiftora logo" class="logo" onerror="this.style.display='none'">
-        <div class="brand">Swiftora</div>
-        <a class="navlink" href="/careers/">Careers</a>
-        <span class="tag">Coming&nbsp;Soon</span>
-      </div>
+  <header class="wrap nav">
+    <div class="tag">Swiftora</div>
+    <nav class="links" style="display:flex;gap:14px">
+      <a class="btn ghost" href="/careers/">Careers</a>
+      <a class="btn primary" href="mailto:info@swiftora.com?subject=Swiftora%20Early%20Access">Request Early Access</a>
+    </nav>
+  </header>
 
-      <div class="body">
-        <h1>We’re building something useful.</h1>
-        <p class="lead">
-          Swiftora crafts AI-powered tools that save time for online sellers and creators.
-          A new experience is on the way. If you’re here from a job post, reach us below.
-        </p>
+  <main class="wrap">
+    <h1>We’re in private pre-launch.</h1>
+    <p class="lead">This .ai site stays intentionally minimal. If you’re interested in opportunities or early access, use the links above. We’re not sharing product details publicly yet.</p>
+  </main>
 
-        <div class="row" aria-label="Primary actions">
-          <a class="btn primary" href="mailto:info@swiftora.com?subject=Application:%20Operations%20%26%20Digital%20Assistant">Apply — Ops &amp; Assistant</a>
-          <a class="btn" href="mailto:info@swiftora.com?subject=Application:%20Student%20Developer%20Internship">Apply — Student Developer</a>
-          <a class="btn" href="mailto:info@swiftora.com?subject=General%20Inquiry">Contact</a>
-        </div>
-
-        <div class="traits" aria-label="Company traits">
-          <span class="pill">Remote-first</span>
-          <span class="pill">Small &amp; fast</span>
-          <span class="pill">Mentorship-focused</span>
-        </div>
-      </div>
-
-      <div class="footer">
-        <span>© <span id="y"></span> Swiftora LLC</span>
-        <span><a href="/privacy.html" style="text-decoration:none;color:inherit;border-bottom:1px solid rgba(15,17,21,.2)">Privacy</a> • Remote-first • Detailed docs post-NDA</span>
-      </div>
-    </div>
-  </div>
-  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+  <footer>
+    <div class="wrap">© <script>document.write(new Date().getFullYear())</script> Swiftora LLC. All rights reserved.</div>
+  </footer>
 </body>
 </html>
