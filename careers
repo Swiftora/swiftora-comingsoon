@@ -1,1 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Careers at Swiftora</title>
+  <meta name="description" content="Join Swiftora—remote-friendly roles for students and early-career builders." />
+  <meta name="theme-color" content="#0F1115" />
+  <style>
+    /* ===== Match your Coming Soon palette — tweak accent if needed ===== */
+    :root{
+      --bg-1:#0F1115; --bg-2:#141825; --fg:#F5F7FB; --muted:#AAB1C2; --accent:#FF6B3D;
+      --card:rgba(255,255,255,.06); --border:rgba(255,255,255,.12);
+      --radius:18px; --shadow:0 24px 60px rgba(0,0,0,.45); --maxw:1040px;
+    }
+    *{box-sizing:border-box} html,body{height:100%}
+    body{
+      margin:0;color:var(--fg);
+      background:
+        radial-gradient(1200px 800px at 80% -20%, color-mix(in oklab, var(--accent) 18%, #000) 0%, transparent 60%),
+        linear-gradient(180deg, var(--bg-1), var(--bg-2));
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial;
+      line-height:1.55; padding:32px;
+    }
+    .wrap{max-width:var(--maxw);margin:0 auto}
+    .nav{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+    .logo{height:40px;width:40px;border-radius:12px;display:grid;place-items:center;
+      background: radial-gradient(120% 120% at 20% 20%, #fff 0%, color-mix(in oklab, var(--accent) 45%, #fff) 45%, var(--accent) 100%);
+      color:#0f0f12;font-weight:800}
+    .brand{font-weight:700}
+    .nav a{margin-left:auto;color:var(--fg);text-decoration:none;border:1px solid var(--border);
+      padding:8px 12px;border-radius:10px}
+    .hero{
+      background:var(--card); border:1px solid var(--border); border-radius:var(--radius); box-shadow:var(--shadow);
+      padding:28px; margin-bottom:18px;
+    }
+    h1{margin:0 0 8px;font-size:clamp(28px,5vw,40px)}
+    .lead{color:var(--muted);max-width:820px}
+    .grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:18px}
+    @media(min-width:880px){.grid{grid-template-columns:1fr 1fr}}
+    .card{
+      background:var(--card); border:1px solid var(--border); border-radius:var(--radius); box-shadow:var(--shadow);
+      padding:22px; display:flex; flex-direction:column; gap:12px;
+    }
+    h2{margin:0 0 4px;font-size:22px}
+    .meta{display:flex;flex-wrap:wrap;gap:10px;font-size:13px;color:var(--muted)}
+    .pill{border:1px dashed var(--border);border-radius:999px;padding:5px 10px}
+    ul{margin:0 0 6px 18px}
+    .section-title{margin:10px 0 6px;font-size:16px;color:var(--muted)}
+    .btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto}
+    a.button{
+      display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:var(--fg);
+      padding:10px 14px;border-radius:12px;border:1px solid var(--border);transition:.15s ease;background:transparent
+    }
+    a.button.primary{
+      background: linear-gradient(135deg, var(--accent), color-mix(in oklab, var(--accent) 70%, #5c4cff));
+      border-color:transparent; box-shadow:0 12px 32px color-mix(in oklab, var(--accent) 25%, #000);
+    }
+    footer{margin-top:16px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+    .tiny{font-size:12px;color:var(--muted)}
+    @media (prefers-color-scheme: light){
+      :root{--bg-1:#f7f8fb;--bg-2:#eff2f7;--fg:#0f1115;--muted:#596170;--card:rgba(255,255,255,.92);--border:rgba(15,17,21,.08)}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="nav">
+      <div class="logo" aria-hidden="true">S</div>
+      <div class="brand">Swiftora</div>
+      <a href="/" aria-label="Back to home">Home</a>
+    </div>
+
+    <section class="hero" role="region" aria-label="Careers intro">
+      <h1>Work with us.</h1>
+      <p class="lead">
+        Swiftora crafts AI-powered tools that save time for online sellers and creators. We’re small, remote-first, and hands-on.
+        Students and early-career builders get real responsibility, tight feedback loops, and mentorship.
+      </p>
+      <p class="tiny">Note: Full product details and repositories are shared after a brief screen and a signed NDA.</p>
+    </section>
+
+    <section class="grid" aria-label="Open roles">
+      <!-- Role 1: Operations & Digital Assistant -->
+      <article class="card" aria-labelledby="ops-title">
+        <h2 id="ops-title">Operations & Digital Assistant (Remote · Part-Time)</h2>
+        <div class="meta">
+          <span class="pill">$20/hr</span>
+          <span class="pill">10–20 hrs/month</span>
+          <span class="pill">Mentorship</span>
+        </div>
+
+        <div class="section-title">You’ll help with</div>
+        <ul>
+          <li>Turning weekly plans into calendar events with reminders</li>
+          <li>Booking and confirming appointments, activities, and travel holds</li>
+          <li>Researching options (insurance, services) and summarizing picks</li>
+          <li>Light brand ops: content calendar, drafts, tidy file/org</li>
+        </ul>
+
+        <div class="section-title">What you’ll learn</div>
+        <ul>
+          <li>Real-world scheduling, vendor outreach, and follow-through</li>
+          <li>Go-to-market basics and social workflow organization</li>
+          <li>Using AI to speed research and drafting (no prior AI exp. required)</li>
+        </ul>
+
+        <div class="section-title">Nice to have</div>
+        <ul>
+          <li>Google Workspace, Notion/Trello familiarity</li>
+          <li>Comfort calling providers and writing clear emails</li>
+        </ul>
+
+        <div class="btnrow">
+          <a class="button primary" href="mailto:info@swiftora.com?subject=Application:%20Operations%20%26%20Digital%20Assistant&body=Hi%20Swiftora%2C%0A%0AMy%20name%20is%20...%20I%E2%80%99m%20interested%20in%20the%20Operations%20%26%20Digital%20Assistant%20role.%20Here%E2%80%99s%20a%20quick%20note%20on%20my%20experience%3A%0A%E2%80%A2%20Scheduling%20or%20coordination%20example%0A%E2%80%A2%20Tools%20I%20use%0A%E2%80%A2%20Availability%20(hrs%2Fwk)%0A%0AThanks!">Apply — Ops & Assistant</a>
+          <a class="button" href="mailto:info@swiftora.com?subject=Question%20about%20Ops%20%26%20Digital%20Assistant">Ask a question</a>
+        </div>
+      </article>
+
+      <!-- Role 2: App Developer -->
+      <article class="card" aria-labelledby="dev-title">
+        <h2 id="dev-title">App Developer — Startup Project (Remote · Part-Time)</h2>
+        <div class="meta">
+          <span class="pill">$20/hr</span>
+          <span class="pill">10–15 hrs/week</span>
+          <span class="pill">Project-based</span>
+        </div>
+
+        <div class="section-title">You’ll help with</div>
+        <ul>
+          <li>Building features for an AI-assisted marketplace tool (MVP)</li>
+          <li>Integrating APIs and iterating quickly from feedback</li>
+          <li>Clean code, basic testing, and lightweight docs</li>
+        </ul>
+
+        <div class="section-title">Preferred skills (any subset)</div>
+        <ul>
+          <li>JavaScript/TypeScript with React or React Native; or Python</li>
+          <li>Node.js or simple backend; REST/JSON; basic auth patterns</li>
+          <li>Bonus: UI polish, database setup (Postgres/Firebase), AI APIs</li>
+        </ul>
+
+        <div class="section-title">What you’ll learn</div>
+        <ul>
+          <li>Shipping a real MVP end-to-end with founder feedback</li>
+          <li>Product trade-offs, scoping, and iteration</li>
+          <li>Practical version control and lightweight DevOps</li>
+        </ul>
+
+        <div class="btnrow">
+          <a class="button primary" href="mailto:info@swiftora.com?subject=Application:%20App%20Developer&body=Hi%20Swiftora%2C%0A%0AI%E2%80%99m%20interested%20in%20the%20App%20Developer%20role.%20Here%E2%80%99s%20a%20quick%20note%3A%0A%E2%80%A2%20Link%20to%20GitHub%20or%20project%0A%E2%80%A2%20Tech%20stack%20I%20know%0A%E2%80%A2%20Availability%20(hrs%2Fwk)%0A%0AThanks!">Apply — App Developer</a>
+          <a class="button" href="mailto:info@swiftora.com?subject=Question%20about%20App%20Developer%20role">Ask a question</a>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      <span>© <span id="year"></span> Swiftora LLC</span>
+      <span class="tiny">Remote-first. Repos and detailed docs shared post-NDA.</span>
+    </footer>
+  </div>
+
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
 
