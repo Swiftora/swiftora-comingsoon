@@ -1,2 +1,3 @@
 User-agent: *
 Disallow: /
+# Belt-and-suspenders with meta noindex on each page.
