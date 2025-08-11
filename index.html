@@ -3,179 +3,174 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Swiftora — Coming Soon</title>
-  <meta name="description" content="Swiftora crafts AI-powered tools that save time for online sellers and creators." />
-  <meta name="robots" content="index,follow" />
+  <title>Careers at Swiftora</title>
+  <meta name="description" content="Join Swiftora—remote-friendly roles for students and early-career builders." />
   <meta name="theme-color" content="#F4F6FA" />
-
-  <!-- Open Graph (optional but nice) -->
-  <meta property="og:title" content="Swiftora — Coming Soon" />
-  <meta property="og:description" content="Tools that save sellers & creators time. A new experience is on the way." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.swiftora.com/" />
+  <link rel="icon" type="image/png" href="swiftora_icon_512x512.png" />
 
   <style>
-    /* ========= Brand tokens (tweak just these for color/feel) ========= */
+    /* ===== match tokens with index.html ===== */
     :root{
-      --bg: #F4F6FA;                 /* page background */
-      --bg-blob: #c7c3bd;            /* subtle corner blob */
-      --card: #ffffff;               /* card surface */
-      --ink: #0f1115;                /* primary text */
-      --muted: #5f6673;              /* secondary text */
-      --border: rgba(15,17,21,.08);  /* hairline */
-      --shadow-1: 0 20px 60px rgba(15,17,21,.18);
-      --radius: 18px;
-
-      /* Accent (Swiftora orange—adjust if you like) */
-      --accent-1: #ff6b3d;
-      --accent-2: #d35a4a;
-      --accent-3: #b24e4b;
-      --accent-on: #fff;
+      --bg:#F4F6FA; --blob:#d9d7d2; --card:#ffffff; --ink:#0f1115; --muted:#5f6673; --hair:rgba(15,17,21,.08);
+      --shadow:0 20px 60px rgba(15,17,21,.16); --radius:18px;
+      --accent:#FF6B3D; --accent-deep:#D35A4A; --accent-on:#ffffff;
     }
-
-    /* ========== Base ========== */
+    @media (prefers-color-scheme: dark){
+      :root{
+        --bg:#0f1115; --blob:#22242a; --card:#171a21; --ink:#f5f7fb; --muted:#aab1c2; --hair:rgba(255,255,255,.12);
+        --shadow:0 20px 60px rgba(0,0,0,.45);
+      }
+    }
     *{box-sizing:border-box}
     html,body{height:100%}
     body{
-      margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial;
-      color:var(--ink);
+      margin:0; color:var(--ink);
       background:
-        radial-gradient(880px 540px at 86% -8%, var(--bg-blob) 0%, rgba(0,0,0,0) 60%),
+        radial-gradient(900px 560px at 86% -10%, var(--blob) 0%, rgba(0,0,0,0) 60%),
         var(--bg);
-      display:grid;
-      place-items:start center;
-      padding:40px 18px 80px;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial;
+      line-height:1.55; padding:40px 18px 80px;
     }
+    .wrap{max-width:1040px;margin:0 auto}
 
-    .wrap{max-width:1040px;width:100%}
-
-    /* Card */
-    .card{
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow-1);
-      overflow:hidden;
+    .nav{
+      display:flex; align-items:center; gap:12px; margin-bottom:18px;
     }
-
-    /* Header */
-    .header{
-      display:flex; align-items:center; gap:12px;
-      padding:18px 20px;
-      border-bottom:1px solid var(--border);
-    }
-    .logo{
-      height:40px; width:40px; border-radius:12px; object-fit:cover; display:block;
-      box-shadow: 0 6px 18px rgba(0,0,0,.15);
-    }
+    .logo{height:40px;width:40px;border-radius:12px;object-fit:cover;display:block;box-shadow:0 6px 18px rgba(0,0,0,.12)}
     .brand{font-weight:700}
-    .tag{
-      margin-left:auto;
-      display:inline-block; padding:6px 10px; border-radius:999px;
-      font-size:12px; letter-spacing:.3px; font-weight:600;
-      color:var(--accent-2);
-      background: rgba(255,107,61,.10);
-      border: 1px solid rgba(255,107,61,.28);
+    .nav a.home{
+      margin-left:auto; text-decoration:none; color:var(--ink);
+      border:1px solid var(--hair); padding:8px 12px; border-radius:10px;
     }
 
-    /* Body */
-    .body{padding:34px 28px}
-    h1{margin:0 0 10px; font-size: clamp(28px, 6vw, 48px); line-height:1.1}
-    .lead{max-width:800px; color:var(--muted); margin:6px 0 18px}
+    .hero{
+      background:var(--card); border:1px solid var(--hair); border-radius:var(--radius); box-shadow:var(--shadow);
+      padding:28px; margin-bottom:18px;
+    }
+    h1{margin:0 0 8px; font-size:clamp(28px,5vw,40px)}
+    .lead{color:var(--muted); max-width:840px}
+    .note{font-size:12px; color:#6b7280; margin-top:10px}
 
-    /* Buttons */
-    .row{display:flex; flex-wrap:wrap; gap:12px; margin:16px 0 18px}
+    .grid{display:grid; grid-template-columns:1fr; gap:16px; margin-top:18px}
+    @media(min-width:900px){ .grid{grid-template-columns:1fr 1fr} }
+
+    .card{
+      background:var(--card); border:1px solid var(--hair); border-radius:var(--radius); box-shadow:var(--shadow);
+      padding:22px; display:flex; flex-direction:column; gap:12px;
+    }
+    h2{margin:0 0 4px; font-size:22px}
+    .meta{display:flex; flex-wrap:wrap; gap:10px; font-size:13px; color:var(--muted)}
+    .pill{border:1px dashed var(--hair); border-radius:999px; padding:5px 10px}
+    .section{margin:8px 0 2px; font-size:16px; color:var(--muted)}
+    ul{margin:0 0 6px 18px}
+    .btnrow{display:flex; flex-wrap:wrap; gap:10px; margin-top:auto}
     a.btn{
-      --pad: 12px 16px;
-      display:inline-flex; align-items:center; gap:10px;
-      text-decoration:none; padding:var(--pad); border-radius:12px;
-      border:1px solid var(--border); color:var(--ink); background:#fff;
-      transition: transform .08s ease, box-shadow .15s ease, background .15s ease;
+      display:inline-flex; align-items:center; gap:8px; text-decoration:none;
+      padding:10px 14px; border-radius:12px; border:1px solid var(--hair); background:#fff; color:var(--ink);
+      transition:.15s ease;
     }
-    a.btn:hover{transform: translateY(-1px)}
+    a.btn:hover{transform:translateY(-1px)}
     a.btn.primary{
       color:var(--accent-on);
-      background: linear-gradient(180deg, var(--accent-1), var(--accent-2));
-      border-color: transparent;
-      box-shadow:
-        0 14px 36px rgba(211,90,74,.35),
-        0 1px 0 rgba(255,255,255,.35) inset;
-    }
-    a.btn.ghost{background:#fff}
-    a.btn:active{transform: translateY(0)}
-
-    /* Pills */
-    .pills{display:flex; flex-wrap:wrap; gap:10px}
-    .pill{
-      font-size:13px; color:#667085;
-      border:1px dashed var(--border);
-      padding:7px 12px; border-radius:999px; background:#fff;
+      background:linear-gradient(180deg, var(--accent), var(--accent-deep));
+      border-color:transparent; box-shadow:0 12px 32px rgba(211,90,74,.35), 0 1px 0 rgba(255,255,255,.35) inset;
     }
 
-    /* Footer */
-    .footer{
-      border-top:1px solid var(--border);
-      padding:14px 20px;
-      font-size:13px; color:#6b7280;
-      display:flex; justify-content:space-between; gap:8px; flex-wrap:wrap;
-    }
-
-    /* Responsive nits */
-    @media (max-width: 540px){
-      .body{padding:26px 18px}
-      .row a.btn{flex:1}
-    }
+    footer{margin-top:16px; color:#6b7280; font-size:13px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px}
   </style>
 </head>
 <body>
   <div class="wrap">
-    <div class="card" role="region" aria-label="Swiftora Coming Soon">
-      <!-- Header -->
-      <div class="header">
-        <img src="swiftora_icon_512x512.png" alt="Swiftora logo" class="logo"
-             onerror="this.style.display='none'">
-        <div class="brand">Swiftora</div>
-        <span class="tag">Coming&nbsp;Soon</span>
-      </div>
+    <nav class="nav" aria-label="Primary">
+      <img src="swiftora_icon_512x512.png" alt="Swiftora logo" class="logo" onerror="this.style.display='none'">
+      <div class="brand">Swiftora</div>
+      <a class="home" href="/index.html">Home</a>
+    </nav>
 
-      <!-- Body -->
-      <div class="body">
-        <h1>We’re building something useful.</h1>
-        <p class="lead">
-          Swiftora crafts AI-powered tools that save time for online sellers and creators.
-          A new experience is on the way. If you’re here from a job post, you can reach us directly below.
-        </p>
+    <section class="hero" role="region" aria-label="Careers intro">
+      <h1>Work with us.</h1>
+      <p class="lead">
+        Swiftora crafts AI-powered tools that save time for online sellers and creators.
+        We’re small, remote-first, and hands-on. Students and early-career builders get real responsibility,
+        tight feedback loops, and mentorship. Full product details and repositories are shared after a brief screen and a signed NDA.
+      </p>
+      <p class="note">No location posted. We’re remote-first. We do not list sensitive product details publicly.</p>
+    </section>
 
-        <div class="row">
-          <a class="btn primary" href="mailto:info@swiftora.com?subject=Application:%20Operations%20%26%20Digital%20Assistant">
-            Apply — Ops &amp; Assistant
-          </a>
-          <a class="btn ghost" href="mailto:info@swiftora.com?subject=Application:%20App%20Developer">
-            Apply — App Developer
-          </a>
-          <a class="btn ghost" href="mailto:info@swiftora.com?subject=General%20Inquiry">
-            Contact
-          </a>
+    <section class="grid" aria-label="Open roles">
+      <!-- Role 1: Operations & Digital Assistant -->
+      <article class="card" aria-labelledby="ops-title">
+        <h2 id="ops-title">Operations & Digital Assistant (Remote · Part-Time)</h2>
+        <div class="meta">
+          <span class="pill">$20/hr</span>
+          <span class="pill">10–20 hrs/month</span>
+          <span class="pill">Mentorship</span>
         </div>
 
-        <div class="pills" aria-label="Company traits">
-          <span class="pill">Remote-first</span>
-          <span class="pill">Small &amp; fast</span>
-          <span class="pill">Mentorship-focused</span>
-        </div>
-      </div>
+        <div class="section">You’ll help with</div>
+        <ul>
+          <li>Turning weekly plans into calendar events with reminders</li>
+          <li>Booking and confirming appointments, activities, and travel holds</li>
+          <li>Researching options (insurance, services) and summarizing 2–3 picks</li>
+          <li>Light brand ops: content calendar, draft replies, tidy file/org</li>
+        </ul>
 
-      <!-- Footer -->
-      <div class="footer">
-        <span>© <span id="y"></span> Swiftora LLC</span>
-        <span></span><!-- intentionally blank: no city/address -->
-      </div>
-    </div>
+        <div class="section">What you’ll learn</div>
+        <ul>
+          <li>Real-world scheduling, vendor outreach, and follow-through</li>
+          <li>Go-to-market basics and social workflow organization</li>
+          <li>Using AI to speed research and drafting (no prior AI exp. required)</li>
+        </ul>
+
+        <div class="btnrow">
+          <a class="btn primary" href="mailto:info@swiftora.com?subject=Application:%20Operations%20%26%20Digital%20Assistant&body=Hi%20Swiftora%2C%0A%0AMy%20name%20is%20...%20I%E2%80%99m%20interested%20in%20the%20Operations%20%26%20Digital%20Assistant%20role.%20Here%E2%80%99s%20a%20quick%20note%20on%20my%20experience%3A%0A%E2%80%A2%20Scheduling%20or%20coordination%20example%0A%E2%80%A2%20Tools%20I%20use%0A%E2%80%A2%20Availability%20(hrs%2Fwk)%0A%0AThanks!">Apply — Ops & Assistant</a>
+          <a class="btn" href="mailto:info@swiftora.com?subject=Question%20about%20Ops%20%26%20Digital%20Assistant">Ask a question</a>
+        </div>
+      </article>
+
+      <!-- Role 2: Student App Developer (Unpaid, Equity Eligible) -->
+      <article class="card" aria-labelledby="dev-title">
+        <h2 id="dev-title">Student App Developer — Internship (Remote)</h2>
+        <div class="meta">
+          <span class="pill">Unpaid (Equity eligible)</span>
+          <span class="pill">~10–15 hrs/week</span>
+          <span class="pill">Project-based</span>
+        </div>
+
+        <div class="section">About this internship</div>
+        <ul>
+          <li>Structured for learning under the U.S. DOL primary beneficiary test</li>
+          <li>Hands-on MVP build with mentorship and portfolio credit</li>
+          <li>Milestone reviews; equity eligibility upon successful completion</li>
+        </ul>
+
+        <div class="section">You’ll help with</div>
+        <ul>
+          <li>Implementing features (React/TypeScript preferred) and lightweight APIs</li>
+          <li>Integrating third-party/AI APIs and handling JSON data cleanly</li>
+          <li>Responsive UI, basic analytics, and iterative bugfixes</li>
+        </ul>
+
+        <div class="section">Preferred skills (any subset)</div>
+        <ul>
+          <li>JavaScript/TypeScript, React (or similar), HTML/CSS</li>
+          <li>Node.js or Python basics; REST APIs; Git/GitHub</li>
+          <li>Bonus: UI polish, simple DB (Postgres/Firebase), AI API familiarity</li>
+        </ul>
+
+        <div class="btnrow">
+          <a class="btn primary" href="mailto:info@swiftora.com?subject=Application:%20Student%20Developer%20Internship&body=Hi%20Swiftora%2C%0A%0AI%E2%80%99m%20interested%20in%20the%20Student%20Developer%20Internship.%20Here%E2%80%99s%20a%20quick%20note%3A%0A%E2%80%A2%20Link%20to%20GitHub%20or%20project%0A%E2%80%A2%20Tech%20stack%20I%20know%0A%E2%80%A2%20Availability%20(hrs%2Fwk)%0A%0AThanks!">Apply — Student Developer</a>
+          <a class="btn" href="mailto:info@swiftora.com?subject=Question%20about%20Student%20Developer%20Internship">Ask a question</a>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      <span>© <span id="y"></span> Swiftora LLC</span>
+      <span>Remote-first • Detailed docs shared post-NDA</span>
+    </footer>
   </div>
 
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body>
 </html>
